@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="signUp.css">
+<div class="login-box">
+    <h2>Sign Up</h2>
+    <form method="GET" action="signUp">
+        <div class="user-box">
+            <input type="text" name="username" required="">
+            <label>Username</label>
+        </div>
+        <div class="user-box">
+            <input type="email" name="email" required="">
+            <label>Email</label>
+        </div>
+        <div class="user-box">
+            <input type="password" name="password" required="">
+            <label>Password</label>
+        </div>
+        <div id="userAdminDiv">
+            <input type="radio" id="admin" name="role" value="admin" required="">
+             <label for="admin">Admin</label>
+             <input type="radio" id="user" name="role" value="user" required="">
+             <label for="user">User</label><br>
+        </div>
+        <a href="#">
+          
+            <input id="button" type="submit" value="SIGN UP"></input>
+        </a>
+        <a href="/login.html" id="link">Already a user ?</a>
+    </form>
+</div>

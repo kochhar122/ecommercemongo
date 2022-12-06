@@ -1,0 +1,15 @@
+<div id="titleDiv">
+    <h1 style="text-align: center;"> Welcome to E-commerce Website <%= key2 %></h1>
+    <% if(key2==="" || key2===undefined) { %>
+        <form method="POST" action="/login">
+            <input type="submit" value="login">
+        </form>
+
+        <% }if(key2!==undefined){ %>
+            <form method="POST" action="/logoutBtn">
+                <input type="submit" value="logout">
+            </form>
+
+
+            <% } %>
+                <div>

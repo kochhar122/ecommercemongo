@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>
+        E-commerce
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <%- include( "partials/headers.ejs" ); %>
+
+        <div class="todo">
+
+            <button id="openCart">My Cart</button>
+            <h2>PRODUCT </h2>
+            <div id="titleDiv>
+  <div id=" parent">
+                <% key.forEach(function(val){ %>
+                    <div class="eachDiv">
+                        <div>
+                        <h1 style="text-align: center;font-weight: bold;">
+                            <%= val.productName %>
+                        </h1>
+                        </div>
+
+                        <div  style="text-align: center;">
+                            <img src="<%= val.img  %>" width="200" height="200" >
+                        </div>
+                        <div id="btns" >
+                            <button id="fViewMore" style="text-align: center;padding: 10px;">View More</button>
+                            <form method="post" action="/cart">
+                                <input type="text" name="text" value="<%=JSON.stringify({val, key2}) %>"
+                                    style="display:none;"></input>
+                                <input class="btns" type="submit" value="Add to cart" style="text-align: center;padding: 10px;"></input>
+                            </form>
+                        </div>
+                    </di
+                    v>
+                    <% }) %>
+
+            </div>
+            <div id="newDiv"></div>
+            <button id="loadMore" class="1">Load more</button>
+        </div>
+        </div>
+
+        <script src="script.js"> </script>
+</body>
+
+</html>

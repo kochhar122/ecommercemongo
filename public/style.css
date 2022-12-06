@@ -1,0 +1,117 @@
+#leftPane {
+    background-color: rgba(128, 128, 128, 0.26);
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    block-size: fit-content;
+
+}
+
+#actions {
+    display: flex;
+}
+
+.todo {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#textarea {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+
+}
+
+#createDiv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#title {
+    height: 5%;
+    background-color: gainsboro;
+}
+
+#loginBtn {
+    width: 5%;
+    height: 70%;
+    justify-content: right;
+}
+
+#parent {
+    display: flex;
+    height: 100%;
+    width: 60%;
+}
+
+#titleDiv {
+    display: block;
+    height: 100%;
+}
+
+
+#loadMore {
+    height: 5%;
+    float: right;
+}
+
+#loadMore {
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: blue;
+    transition: .3s;
+}
+
+#loadMore:hover {
+    color: blue;
+    background-color: #fff;
+    border: 1px solid blue;
+    text-decoration: none;
+}
+
+.cartBtn {
+    color: white;
+    background-color: black;
+}
+
+#btns {
+    display: flex;
+    gap :10px;
+    margin-top:10px;
+    justify-content: center;
+   
+}
+
+#fViewMore {
+    height: 20%;
+}
+
+#openCart {
+    float: right;
+}
+
+#fset {
+    justify-content: auto;
+    display: block;
+}
+
+.eachDiv {
+    border-style: solid;
+    text-align: center;
+    
+}
+
+h2 {
+    text-align: center;
+}

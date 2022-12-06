@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>
+        E-commerce
+        
+        
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <%- include( "partials/headers.ejs" ); %>
+        <form method="post" action="/">
+            <input type="submit" value="home" />
+        </form>
+
+        <div class="todo">
+
+            <h2 text-align:center>CART LIST</h2>
+            <div id="titleDiv>
+  <div id=" parent">
+                <% key.forEach(function(val){ %>
+                    <p>
+                        <%= val.productName %>
+                    </p>
+                    <div display="flex">
+                        <img src="<%= val.img  %>" width="200" height="200">
+                    </div>
+
+                    <p>
+                        <%= val.desc %>
+                    </p>
+
+                    <div id="actions">
+                        <form method="post" action="/removeItem">
+                            <input type="text" name="text" value="<%=JSON.stringify({val, key2}) %>"
+                                style="display:none;"></input>
+                            <input type="submit" value="remove item"></input>
+                        </form>
+
+                        <form method="post" action="/plusCart">
+                            <input type="text" name="text" value="<%=JSON.stringify({val, key2}) %>"
+                                style="display:none;"></input>
+                            <input type="submit" value="+"></input>
+                        </form>
+
+                        <label>
+                            <%=val.quantity%>
+                        </label>
+
+                        <form method="post" action="/minCart">
+                            <input type="text" name="text" value="<%=JSON.stringify({val, key2}) %>"
+                                style="display:none;"></input>
+                            <input type="submit" value="-"></input>
+                        </form>
+
+                    </div>
+            </div>
+            <% }) %>
+
+        </div>
+
+        </div>
+        </div>
+
+        <script src="script.js"> </script>
+</body>
+
+</html>
